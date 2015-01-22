@@ -5,18 +5,17 @@ class Admin::CategoriesController < Admin::BaseController
   def edit; new_or_edit;  end
 
   def new 
-    respond_to do |format|
-      format.html { new_or_edit }
+    respond_to do |format|        # new
+      format.html { new_or_edit } #block (2 levels) in new
       format.js { 
         @category = Category.new
       }
-    end
+    end                                                                                                        
   end
 
   def destroy
     @record = Category.find(params[:id])
     return(render 'admin/shared/destroy') unless request.post?
-
     @record.destroy
     redirect_to :action => 'new'
   end
@@ -25,7 +24,8 @@ class Admin::CategoriesController < Admin::BaseController
 
   def new_or_edit
     @categories = Category.find(:all)
-    @category = Category.find(params[:id])
+    #.find returns RecordNotFound exception if nil while .find_by_id does not
+    @category = Category.find_by_id(params[:id]) || Category.new 
     @category.attributes = params[:category]
     if request.post?
       respond_to do |format|

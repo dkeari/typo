@@ -276,3 +276,26 @@ end
 Then /^show me the page$/ do
   save_and_open_page
 end
+
+#step definitions for creating categories
+
+When /^I fill in name$/ do
+  pending # express the regexp above with the code you wish you had
+end
+
+When /^I fill in keywords$/ do
+  pending # express the regexp above with the code you wish you had
+end
+
+When /^I fill in description$/ do
+  pending # express the regexp above with the code you wish you had
+end
+
+Then /^I should see the new category$/ do
+  pending # express the regexp above with the code you wish you had
+end
+
+Then /^I should not see the new category$/ do
+  pending # express the regexp above with the code you wish you had
+end
+
