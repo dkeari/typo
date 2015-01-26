@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails typo: development" uuid="41bf8aee-b135-4ae5-b726-7875eb5aed8a">
+      <first-sync>true</first-sync>
+    </data-source>
+    <data-source name="Rails typo: test" uuid="b92f120a-5c9d-4d04-921e-cf9d2d709c6f">
+      <first-sync>true</first-sync>
+    </data-source>
+    <data-source name="Rails typo: production" uuid="adcd9c7e-9c39-4a31-b997-055c390bb6a2">
+      <first-sync>true</first-sync>
+    </data-source>
+    <data-source name="Rails typo: cucumber" uuid="7e23b6a1-cd59-41b6-9bca-f44cdddd1b97">
+      <first-sync>true</first-sync>
+    </data-source>
+  </component>
+</project>
